@@ -1,8 +1,14 @@
-import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn } from 'typeorm';
+import {
+  Entity,
+  Column,
+  PrimaryGeneratedColumn,
+  CreateDateColumn,
+  UpdateDateColumn,
+} from 'typeorm';
 
 /**
  * User Entity - Domain Model
- * 
+ *
  * This represents the core domain entity in our CQRS architecture.
  * Entities contain business logic and represent the state of our domain objects.
  */
@@ -26,4 +32,3 @@ export class User {
   @UpdateDateColumn()
   updatedAt: Date;
 }
-
